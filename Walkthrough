@@ -1,0 +1,27 @@
+So after reading the informative description/story behind the challenge I downloaded the flag file and opened up the link to the site to start the investigation https://lichess.org/HENhcRIn
+
+This appearred to be a chess game emmulator with pieces that had been moved and game completed (not a chess expert at all), I clicked around a bit and looked at some source code but found nothing that really meant anything
+
+It did appear that you could download the moves from the games as a PGN file https://lichess.org/game/export/HENhcRIn?evals=0&clocks=0, which i then Googled how to look at 
+
+This lead me to the site https://chesstempo.com/pgn-viewer/ which allowed the file to be viewed and showed the moves in the game as 1.  g3 Nf6 2. b4 b5 3. Bh3 g6 4. Bg2 h5 5. c3 Ba6 6. Qa4 Ng4 7. a3 f5 8. Bxa8 Bh6 9. Bg2 Bf8 10. h4 Kf7 11. f3 Nh2 12. Kf2 Kg8 13. c4 Nf1 14. d4 Rh7 15. Be3 c6 16. Ra2 Qc8 17. Bxf1 Rh8 18. Rh3 Bh6 19. Qxb5 Kf7 20. Qa5 Bb7 21. Qc7 Qd8 22. Qa5 Kf8 23. Ke1 e6 24. Bc1 d5 25. Rc2 Na6 26. Rc3 Be3 27. a4 Bf2+ 28. Kxf2 Qc7 29. Qxc7 Ke8 30. Qg7 g5 31. Ke3 Bc8 0-1
+
+After some rabbit hole work using dcode/fr I thought this might be a Forsythn-Edwards notation based cypher but this led to alot of random code generation that was meaningless
+
+Therefore I went back to Google and looked for chess steg or crypto resources, this lead me to https://incoherency.co.uk/chess-steg/ site
+
+THe site allows for translation of chess moves in the PGN format into words, which when decrypted gave a paste bin site of https://justpaste.it/ThE_K1nG_1s_M4t
+
+In the paste bin is the image of a giant chess piece stating the handover will take place there
+
+Reverse image search and tineyes found the piece at the World Chess Hall of Fame (https://worldchesshof.org/program/6280/Family%20Day for image) with an address of 4652 Maryland Avenue, Saint Louis, MO 63108
+
+As the flag file was a W-3-W challenge I plugged this address into the W-3-W website and used street view to find the square infront of the giant chess piece
+
+This was moth-gallons-press
+
+Pasted into zip file and card retrieved
+
+
+
+Interesting challenge with a slight rabbit hole diversion, but enjoyable to find a new Steg methodology
